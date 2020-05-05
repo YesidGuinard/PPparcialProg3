@@ -1,0 +1,14 @@
+{
+    "name": "yesid/parcial",
+    "type": "project",
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Yesid Guinard",
+            "email": "ydguinards@gmail.com"
+        }
+    ]
+}
