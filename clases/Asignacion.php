@@ -32,8 +32,14 @@ class Asignacion
                 return false;
 
         $turno = $request['turno'];
+        $profesor = Profesor::getProfesor('legajo',$request['legajo']);
+        $materia = Materia::getMateria('id', $request['id']);
+        if ($turno != 'manana' && $turno != 'noche') return false; // valido turno
 
-        if ($turno != 'manana' && $turno != 'noche') return false;
+        if (!isset($profesor) || !isset($materia)){ // No Se encuentran registrados en los json
+            return false;
+        }
+
 
         if (!empty($asignaciones))
             foreach ($asignaciones as $key => $asignacione)

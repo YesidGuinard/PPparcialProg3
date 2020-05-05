@@ -92,7 +92,7 @@ if (isset($request_method) && isset($path_info)) {
                         } else {
                             $message = "Asignacion vacio o Legajo profesor ya registrados en turno)";
                         }
-                       
+
                     }else{
                         $message = "Asignacion no existe o no es tipo usuario Autorizado";
                     }
