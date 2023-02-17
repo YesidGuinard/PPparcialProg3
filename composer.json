@@ -2,7 +2,7 @@
     "name": "yesid/parcial",
     "type": "project",
     "require": {
-        "firebase/php-jwt": "^5.2"
+        "firebase/php-jwt": "^6.0"
     },
     "license": "mit",
     "authors": [
